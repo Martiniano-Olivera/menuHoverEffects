@@ -1,0 +1,83 @@
+body{
+	background: #009688;
+}
+
+body,div,dl,h2,h3{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.mh-menu{
+	height: 385px;
+	width: 599px;
+	margin: 20px auto;
+	position: relative;
+}
+.mh-menu li{
+	width: 300px;
+}
+.mh-menu li a{
+	display: block;
+	width: 280px;
+	padding: 0px 10px;
+	text-align: right;
+	position: relative;
+	z-index: 10;
+	height: 97;
+	border-right: 1px solid #ddd;
+	background: rgba(255,255,255,0.8);
+}
+.mh-menu li:hover a{
+	background: rgba(255,239,240,0.4);
+}
+.mh-menu li a span{
+	display: block;
+}
+.mh-menu li a span:first-child{
+	font-size: 15px;
+	color: #333;
+	padding-top: 10px;
+	font-family: tahoma;
+	text-transform: uppercase;
+}
+.mh-menu li a span:nth-child(2){
+	font-weight: 700;
+	font-size: 28px;
+	font-family: tahoma;
+	transition: color 0.2s linear;
+	color: #333;
+}
+.mh-menu li:nth-child(1):hover span:nth-child(2){
+	color: #9b59b6;
+}
+.mh-menu li:nth-child(2):hover span:nth-child(2){
+	color: #3498db;
+}
+.mh-menu li:nth-child(3):hover span:nth-child(2){
+	color: #16a085;
+}
+.mh-menu li:nth-child(4):hover span:nth-child(2){
+	color: #1abc9c;
+}
+.mh-menu li img{
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+	transition: left 1s ease-in-out, opacity 1s ease-in-out;
+}
+.mh-menu li:hover img{
+	left: 350px;
+	opacity: 1;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
